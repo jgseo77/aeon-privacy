@@ -47,7 +47,7 @@
   <h2>1. 개발자가 직접 수집하는 정보</h2>
   <p>개발자는 이용자를 식별할 수 있는 개인정보를 <strong>직접 수집하거나 서버로 전송하지 않습니다.</strong> 본 앱은 이름, 이메일, 전화번호, 위치 정보 등을 요구하지 않습니다.</p>
   <ul>
-    <li><strong>게임 저장 데이터</strong>(진행도, 설정, 업적 등)는 이용자 기기의 로컬 저장소에 보관되며 <strong>개발자의 서버로는 전송되지 않습니다.</strong> 다만 순위표·업적 기록은 Google 또는 Apple의 게임 서비스로 전송됩니다(4항 참조).</li>
+    <li><strong>게임 저장 데이터</strong>(진행도, 설정, 업적 등)는 이용자 기기의 로컬 저장소에 보관되며 <strong>개발자의 서버로는 전송되지 않습니다.</strong> 다만 순위표·업적 기록은 Google 또는 Apple의 게임 서비스로 전송되고(4항 참조), Android에서는 운영체제의 자동 백업 기능으로 이용자 본인의 Google 계정에 백업될 수 있습니다(9항 참조).</li>
     <li>이용자가 직접 "백업 내보내기"를 실행하는 경우에만, 저장 데이터가 기기의 공유 기능을 통해 이용자가 선택한 위치(파일·메신저 등)로 내보내집니다. 이 과정은 이용자의 명시적 조작에 의해서만 일어나며 개발자는 관여하지 않습니다.</li>
   </ul>
 
@@ -115,7 +115,16 @@
   <p>본 앱은 아동을 주 대상으로 하지 않으며, 개발자는 아동으로부터 고의로 개인정보를 수집하지 않습니다.</p>
 
   <h2>9. 데이터 보관 및 삭제</h2>
-  <p>게임 저장 데이터는 이용자 기기에 존재하므로, <strong>앱을 삭제하면 함께 삭제됩니다</strong>(이용자가 별도로 백업한 파일 제외). 광고 관련 데이터의 보관·삭제는 위 Google 정책을 따릅니다. 기기 설정에서 광고 식별자를 초기화하거나 맞춤 광고를 해제할 수 있습니다.</p>
+  <p>게임 저장 데이터는 이용자 기기에 저장되며, <strong>앱을 삭제하면 기기에서 함께 삭제됩니다</strong>(이용자가 별도로 백업한 파일 제외). 광고 관련 데이터의 보관·삭제는 위 Google 정책을 따릅니다. 기기 설정에서 광고 식별자를 초기화하거나 맞춤 광고를 해제할 수 있습니다.</p>
+
+  <h3>Android 자동 백업</h3>
+  <p><strong>Android에서는 운영체제(Google)의 자동 백업 기능이 켜져 있으면, 앱의 저장 데이터가 이용자 본인의 Google 계정으로 백업됩니다.</strong> 이는 개발자가 만든 기능이 아니라 Android가 앱 전반에 제공하는 기능이며, 백업본은 <strong>이용자의 계정에 보관되어 개발자는 열람할 수 없습니다.</strong> 앱을 삭제한 뒤 같은 계정으로 다시 설치하면 이 백업본이 자동으로 복원될 수 있습니다.</p>
+  <ul>
+    <li><strong>끄기</strong> — 기기의 <em>설정 &gt; Google &gt; 백업</em>에서 자동 백업을 해제할 수 있습니다.</li>
+    <li><strong>지우기</strong> — 같은 화면(또는 Google Drive 앱의 <em>백업</em> 항목)에서 저장된 백업을 삭제할 수 있습니다.</li>
+    <li>백업은 실시간이 아니라 주기적으로(대체로 하루 한 번, 충전·Wi-Fi 연결 상태에서) 이루어지므로, 복원된 데이터가 최신이 아닐 수 있습니다.</li>
+  </ul>
+  <p>iOS에서는 앱 데이터가 기기 전체의 iCloud 백업에 포함될 수 있으며, 이는 이용자의 iCloud 설정을 따릅니다. 어느 경우에도 개발자는 해당 백업에 접근할 수 없습니다.</p>
   <p><strong>순위표·업적 기록은 앱을 삭제해도 Google 또는 Apple의 서버에 남습니다.</strong> 삭제를 원하시면 다음 경로를 이용하시거나, 아래 문의처로 연락 주시기 바랍니다.</p>
   <ul>
     <li><strong>Android</strong> — Play 게임즈 앱 &gt; 프로필 &gt; 설정 &gt; 게임 데이터 삭제(게임별 삭제 가능)</li>
@@ -144,7 +153,7 @@
   <h2>1. Information the Developer Collects Directly</h2>
   <p>The Developer does <strong>not collect or transmit any personally identifiable information</strong> to its servers. The App does not ask for your name, email, phone number, or location.</p>
   <ul>
-    <li>Game save data (progress, settings, achievements) is stored in your device's local storage and is <strong>never sent to the Developer</strong>. Leaderboard and achievement records are, however, sent to Google's or Apple's game services (see section 4).</li>
+    <li>Game save data (progress, settings, achievements) is stored in your device's local storage and is <strong>never sent to the Developer</strong>. Leaderboard and achievement records are, however, sent to Google's or Apple's game services (see section 4), and on Android your save data may be backed up to your own Google account by the operating system's automatic backup (see section 9).</li>
     <li>Only when you actively use "Export Backup," your save data is exported through your device's share feature to a destination you choose (file, messenger, etc.). This happens solely by your explicit action; the Developer is not involved.</li>
   </ul>
 
@@ -212,7 +221,16 @@
   <p>The App is not directed to children, and the Developer does not knowingly collect personal information from children.</p>
 
   <h2>9. Data Retention and Deletion</h2>
-  <p>Because save data lives on your device, <strong>uninstalling the App deletes it</strong> (except any file you exported yourself). Retention and deletion of advertising data follow Google's policies above. You can reset your advertising identifier or opt out of personalized ads in your device settings.</p>
+  <p>Save data is stored on your device, and <strong>uninstalling the App removes it from the device</strong> (except any file you exported yourself). Retention and deletion of advertising data follow Google's policies above. You can reset your advertising identifier or opt out of personalized ads in your device settings.</p>
+
+  <h3>Android automatic backup</h3>
+  <p><strong>On Android, if the operating system's automatic backup is enabled, the App's save data is backed up to your own Google account.</strong> This is a feature Android provides to apps in general, not something the Developer built; the backup is held in your account and <strong>the Developer cannot read it.</strong> If you uninstall the App and reinstall it under the same account, that backup may be restored automatically.</p>
+  <ul>
+    <li><strong>Turn it off</strong> — <em>Settings &gt; Google &gt; Backup</em> on your device.</li>
+    <li><strong>Delete it</strong> — from the same screen, or under <em>Backups</em> in the Google Drive app.</li>
+    <li>Backups are periodic rather than live (typically about once a day, while charging and on Wi-Fi), so restored data may not be the most recent.</li>
+  </ul>
+  <p>On iOS, app data may be included in your device's iCloud backup according to your iCloud settings. In neither case can the Developer access those backups.</p>
   <p><strong>Leaderboard and achievement records remain on Google's or Apple's servers even after you uninstall the App.</strong> To delete them, use the paths below or contact us using the details at the end of this policy.</p>
   <ul>
     <li><strong>Android</strong> — Play Games app &gt; Profile &gt; Settings &gt; Delete Play Games account &amp; data (per-game deletion available)</li>
